@@ -99,11 +99,14 @@ nav {
   color: orangered;
 }
 .active {
+  /*
   background-color: orangered;
   transition: all 0.5s ease-out;
   height: 30px;
   width: 80px;
   text-align: center;
+  */
+  border-bottom: 5px solid orangered;
 }
 
 .burger {
