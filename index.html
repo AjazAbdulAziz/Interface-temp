@@ -17,48 +17,49 @@
       type="text/css"
       media="screen"
       href="css/buttonAnimation.css"
-    /></head
-  >c
+    />
+  </head>
   <body id="particles-js" class="load">
     <div class="container">
       <nav id="nav">
         <img src="" class="navLogo" />
         <ul class="navLinks">
-          <li></li>
-            <a class="links active" href="#home">Home</a>
+          <li class="active">
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a  href="#about-interface">About</a>
+            <a href="#about-interface">About</a>
           </li>
           <li>
-            <a  href="#events-interface">Events</a>
+            <a href="#events-interface">Events</a>
           </li>
           <li>
-            <a  href="#speakers-interface">Speakers</a>
+            <a href="#register-interface">Register</a>
           </li>
           <li>
-            <a  href="#acheivements-interface">Acheivements</a>
-          </li>
-          <li>
-            <a  href="#sponsors-interface">Sponsors</a>
-          </li>
-          <li>
-            <a  href="#team-interface">Contact</a>
-          </li>
-          <li>
-            <a  href="">Tarang</a>
+            <a href="#contact-interface">Contact</a>
           </li>
         </ul>
+        <script src="js/logoanim.js"></script>
 
-        <button class="menu burger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-      <svg width="50" height="50" viewBox="0 0 100 100">
-        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-        <path class="line line2" d="M 20,50 H 80" />
-        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-      </svg>
-    </button>
+        <button
+          class="menu burger"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
 
-        
         <script src="js/hamburger.js"></script>
       </nav>
 
@@ -183,105 +184,9 @@
           <div class="event-lecturesImage"></div>
         </div>
       </section>
-      <section id="speakers-interface">
-        <div class="heading">
-          <h1>Our Previous Speakers</h1>
-        </div>
-        <div class="speakers">
-          <div class="speaker">
-            <img class="anim-img" src="images/final.png" />
-            <p>name<br /></p>
-            <p>
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-            </p>
-          </div>
+      <section id="register-interface"></section>
+      <section id="contact-interface"></section>
 
-          <div class="speaker">
-            <img class="anim-img" src="images/final.png" />
-            <p>
-              name<br />
-
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-            </p>
-          </div>
-
-          <div class="speaker">
-            <img class="anim-img" src="images/final.png" />
-            <p>
-              name<br />
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-            </p>
-          </div>
-
-          <div class="speaker">
-            <img class="anim-img" src="images/final.png" />
-            <p>
-              name<br />
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="acheivements-interface">
-        <div class="heading">
-          <h1>OUR ACHEIVEMENTS</h1>
-        </div>
-        <div class="type">
-          <p class="type-text">Start-Ups <br /></p>
-          <p>
-            <span
-              class="incrementalNumber"
-              big-number="0"
-              data-value="25"
-            ></span>
-          </p>
-          <p class="type-text">Mentors <br /></p>
-          <p>
-            <span
-              class="incrementalNumber"
-              big-number="0"
-              data-value="50"
-            ></span>
-          </p>
-        </div>
-        <script type="text/javascript">
-          $(document).ready(function () {
-            incrementalNumber();
-          });
-        </script>
-      </section>
-
-      <section id="sponsors-interface">
-        <div class="heading">
-          <h1>Collaborators</h1>
-        </div>
-        <div class="heading">
-          <h2>Our Previouis Sponsors</h2>
-        </div>
-        <div class="sponsors"></div>
-      </section>
-
-      <section id="team-interface">
-        <div class="heading">
-          <h1>Organisers</h1>
-        </div>
-        <div class="heading">
-          <h2>Our Team</h2>
-        </div>
-        7
-      </section>
       <footer>
         <div class="map">
           <iframe
@@ -298,23 +203,23 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          | Developed by
-          <a
-            href="https://www.linkedin.com/sreeroop-s-k-160527190"
-            target="_blank"
-            style="color: orangered"
-            >Sreeroop S K</a
-          >
         </p>
       </footer>
+
+      <button class="top-button" onclick="scrollTopAnimated()">
+        <i class="fa fa-hand-pointer-o"></i>
+      </button>
+
+      <script type="text/javascript">
+        function scrollTopAnimated() {
+          $("html, body").animate({ scrollTop: "0" });
+        }
+      </script>
     </div>
 
     <div class="loader-wrapper">
       <img src="./images/loadnganim.svg" class="loader-logo" />
     </div>
-    <!--<div id="ftco-loader" class="show fullscreen" style="background: #121212">
-		<img src="images/bro_animated.svg" width="200px">
-	</div>-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script
