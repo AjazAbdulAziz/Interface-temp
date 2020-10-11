@@ -172,6 +172,9 @@ nav {
       transform: translateX(0);
     }
   }
+
+  /*-----------------hamburger animation---------------------*/
+
   .menu {
     background-color: transparent;
     border: none;
