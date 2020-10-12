@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -954,7 +956,49 @@ footer a {
   text-decoration: none;
   font-weight: lighter;
 }
-
+.footer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.479);
+  margin-top: 10%;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  line-height: 3;
+}
+.footer-left h1 {
+  color: orangered;
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.footer-left h2 {
+  color: white;
+  font-size: 1.3rem;
+}
+.footer-left h3 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+hr {
+  background-color: orangered;
+}
+.footer i {
+  color: white;
+}
+.footer-right ul {
+  color: white;
+  list-style: none;
+}
 .top-button {
   position: fixed;
   bottom: 10px;
