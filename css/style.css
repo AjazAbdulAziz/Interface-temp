@@ -632,6 +632,292 @@ p {
   }
 }
 
+.form h1 {
+  color: whitesmoke;
+  margin: auto;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form h1::first-letter {
+  color: orangered;
+}
+input {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+.content-reg {
+  width: 91%;
+  height: 95%;
+  margin: auto;
+  background: -webkit-linear-gradient(
+    30deg,
+    orange,
+    red,
+    green,
+    blue,
+    yellow,
+    tomato
+  );
+  background-size: 300%;
+  animation: bg 10s linear infinite;
+}
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.form {
+  position: relative;
+  background-color: black;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  padding-left: 25%;
+  padding-right: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.form::before {
+  position: absolute;
+}
+
+.FirstName {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  background: transparent;
+  overflow: hidden;
+}
+.FirstName input {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.FirstName label {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.FirstName label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid tomato;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+}
+.contentName {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.FirstName input:focus + .labelName .contentName,
+.FirstName input:valid + .labelName .contentName {
+  transform: translateY(-100%);
+  font-size: 18px;
+  color: tomato;
+}
+.FirstName input:focus + .labelName::after,
+.FirstName input:valid + .labelName::after {
+  transform: translateX(0%);
+}
+
+.Email {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  background: transparent;
+  overflow: hidden;
+}
+.Email input {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.Email label {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.Email label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid tomato;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+}
+.contentName {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.Email input:focus + .labelName .contentName,
+.Email input:valid + .labelName .contentName {
+  transform: translateY(-100%);
+  font-size: 18px;
+  color: tomato;
+}
+.Email input:focus + .labelName::after,
+.Email input:valid + .labelName::after {
+  transform: translateX(0%);
+}
+
+.Phone {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  background: transparent;
+  overflow: hidden;
+}
+.Phone input {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.Phone label {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.Phone label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid tomato;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+}
+.contentName {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.Phone input:focus + .labelName .contentName,
+.Phone input:valid + .labelName .contentName {
+  transform: translateY(-100%);
+  font-size: 18px;
+  color: tomato;
+}
+.Phone input:focus + .labelName::after,
+.Phone input:valid + .labelName::after {
+  transform: translateX(0%);
+}
+
+.College {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  background: transparent;
+  overflow: hidden;
+}
+.College input {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.College label {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.College label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid tomato;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+}
+.contentName {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.College input:focus + .labelName .contentName,
+.College input:valid + .labelName .contentName {
+  transform: translateY(-100%);
+  font-size: 18px;
+  color: tomato;
+}
+.College input:focus + .labelName::after,
+.College input:valid + .labelName::after {
+  transform: translateX(0%);
+}
+
+#mainButtons {
+  text-align: center;
+  padding-bottom: 40px;
+  margin: auto;
+  transform: translate(-25%);
+}
+.workshop p {
+  color: tomato;
+  font-size: 18px;
+}
+
+.workshop-name {
+  color: white;
+}
+
 .map {
   max-width: 700px;
   height: 500px;
