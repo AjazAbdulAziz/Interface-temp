@@ -646,8 +646,8 @@ input {
   font-family: "Courier New", Courier, monospace;
 }
 .content-reg {
-  width: 91%;
-  height: 95%;
+  position: relative;
+  width: 90%;
   margin: auto;
   background: -webkit-linear-gradient(
     30deg,
@@ -660,6 +660,7 @@ input {
   );
   background-size: 300%;
   animation: bg 10s linear infinite;
+  overflow: hidden;
 }
 @keyframes bg {
   0% {
@@ -675,16 +676,14 @@ input {
 .form {
   position: relative;
   background-color: black;
-  width: 90%;
-  height: 80%;
+  width: 99%;
   margin: auto;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
   padding-left: 25%;
   padding-right: 25%;
   display: flex;
   flex-direction: column;
-}
-.form::before {
-  position: absolute;
 }
 
 .FirstName {
@@ -911,11 +910,19 @@ input {
 }
 .workshop p {
   color: tomato;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 .workshop-name {
+  font-size: 1.5rem;
   color: white;
+}
+input[type="checkbox"] {
+  zoom: 1.5;
+  margin-right: 15px;
+}
+#mainButtons {
+  margin-top: 5%;
 }
 
 .map {
